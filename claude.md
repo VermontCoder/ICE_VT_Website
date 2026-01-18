@@ -5,10 +5,11 @@ This project is a static website designed to inform the public about ICE Tours V
 ## What (Architecture and Structure)
 
 *   **Frontend:** Static Website using only HTML, CSS and Javascript.
-*   **General Page Layout:** All pages should have a header with a miniature version of the `img/primary_logo.png` and the words "ICE Tours VT" on it. There should be navigation links entitled "About ICE in VT", "Schedule" and "Contact" linking to the appropriate pages. Clicking on the minaturized logo should link to the home page.
+*   **General Page Layout:** All pages (except index.html) should have a header with a miniature version of the `img/primary_logo.png` and the words "ICE Tours VT" on it. There should be navigation links entitled "About ICE in VT", "Schedule" and "Contact" linking to the appropriate pages. Clicking on the miniaturized logo should link to `index2.html`.
 *   **Art Assets:** Available art assets to be used on the site are in the "img" folder. These can be cropped or other images downloaded as appropriate to emphasize the message.
-*   **Pages:** 
-    -   `index.html`: Main landing page. Should prominently feature the ICE Tours VT logo located at `img/primary_logo.png`. Should contain only a few sentences describing the website's purpose. Should end with the text "Come join us on a tour!"
+*   **Pages:**
+    -   `index.html`: "Coming Soon" landing page. Has no header/navigation. Shows the logo, "Coming Soon" heading, and brief placeholder text.
+    -   `index2.html`: Full homepage. Prominently features the ICE Tours VT logo located at `img/primary_logo.png`. Contains a few sentences describing the website's purpose and ends with "Come join us on a tour!" Header logo links to this page.
     -   `about_ice_in_vt.html`: Should contain text and images. To create this text, summarize the document in `support_info/factsheet.pdf`. **important** do NOT link to this file anywhere on the site or mention it via text.
     -   `schedule.html`: This page should be a three column table with headers of "Date", "Time", and "Start Location". There should only be one row with "TBD" in all 3 cols.
     -   `contact.html`: This page should feature a contact page. However do not construct the contact form. Instead put this HTML for a contact page:
