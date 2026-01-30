@@ -19,6 +19,7 @@ body {
 h1, h2, h3 {
     font-family: 'Patrick Hand', cursive;
     color: #1a3a2a;
+    text-align: center;
 }
 
 a {
@@ -101,6 +102,10 @@ a:hover {
     margin: 30px auto;
     padding: 0 20px;
     flex: 1;
+}
+
+.main-content.wide {
+    max-width: 960px;
 }
 
 /* Coming Soon page */
@@ -232,6 +237,7 @@ a:hover {
 /* Contact */
 .contact-embed {
     margin-top: 20px;
+    width: 800px;
 }
 
 .contact-embed iframe {
@@ -239,40 +245,30 @@ a:hover {
 }
 
 /* Marginalia */
-.marginalia {
-    position: absolute;
-    opacity: 0.55;
-    pointer-events: none;
-    z-index: 0;
-}
 
-.marginalia-container {
+.title-with-marginalia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.marginalia.left {
-    left: -80px;
+.title-with-marginalia h1 {
+    flex: 1;
 }
 
-.marginalia.right {
-    right: -80px;
-}
-
-.marginalia img {
-    width: 90px;
+.marginalia-corner {
+    width: 30px;
     height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 
-.marginalia.rotate-cw {
-    transform: rotate(8deg);
-}
-
-.marginalia.rotate-ccw {
-    transform: rotate(-8deg);
-}
-
-.marginalia.rotate-more {
-    transform: rotate(15deg);
+.marginalia-corner.left {
+    right: auto;
+    left: 0;
 }
 
 .marginalia-inline {
@@ -307,5 +303,10 @@ a:hover {
 
     .coming-soon h1 {
         font-size: 2rem;
+    }
+
+    .contact-embed {
+        margin-top: 20px;
+        width: 100%;
     }
 }
