@@ -275,6 +275,13 @@ a:hover {
     transform: rotate(15deg);
 }
 
+.marginalia-inline {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    opacity: 1.0;
+}
+
 /* Page intro text */
 .page-intro {
     font-size: 1.1rem;
