@@ -73,4 +73,5 @@ The tone of the website should be upbeat and cheerful but also not hide the fact
 
 ## General
 
-Please ask me questions if something is unclear.
+- Please ask me questions if something is unclear.
+- Do not use any git history before commit id: 5fa0f12125fc127506357e14fcf0d76ba11b0e89. The site is very different before that commit and should not be used to create the site.

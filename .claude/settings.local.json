@@ -4,7 +4,12 @@
       "Bash(git push:*)",
       "Bash(cmd /c:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(dir:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:www.thefarside.com)",
+      "WebFetch(domain:theoatmeal.com)"
     ]
   }
 }
