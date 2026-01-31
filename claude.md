@@ -45,9 +45,6 @@ This project is a static website designed to inform the public about ICE Tours V
                     or just want to see something unusual, ICE Tours VT offers a unique opportunity
                     to witness this infrastructure firsthand.
                 </p>
-                <p>
-                    <strong>After all, seeing is believing!</strong>
-                </p>
             </div>
     ```
     -   `schedule.html`: This page should be a three column table with headers of "Date", "Time", and "Start Location". There should only be one row with "TBD" in all 3 cols.
