@@ -192,6 +192,15 @@ a:hover {
     object-fit: contain;
 }
 
+.facility-address {
+    font-family: 'Comic Neue', cursive, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #555;
+}
+
 .facility-panel > img {
     width: 100%;
     max-height: 400px;
@@ -209,20 +218,19 @@ a:hover {
     margin-bottom: 6px;
 }
 
-/* Why This Matters */
-.why-matters {
+.explain-text {
     background: #e8f5e9;
-    border: 3px dashed #1a3a2a;
     border-radius: 12px;
     padding: 25px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.why-matters h2 {
+.explain-text h2 {
     margin-bottom: 12px;
 }
 
-.why-matters p {
+.explain-text p {
     margin-bottom: 10px;
 }
 
