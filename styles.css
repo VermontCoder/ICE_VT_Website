@@ -234,6 +234,12 @@ a:hover {
     margin-bottom: 10px;
 }
 
+.subtitle-text {
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: center;
+}
+
 /* Schedule table */
 .schedule-table {
     width: 100%;
