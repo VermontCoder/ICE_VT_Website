@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Project: ICE Tours VT
 
 This project is a static website designed to inform the public about ICE Tours VT.
@@ -72,3 +76,32 @@ The tone of the website should be upbeat and cheerful but also not hide the fact
 
 - Please ask me questions if something is unclear.
 - Do not use any git history before commit id: 5fa0f12125fc127506357e14fcf0d76ba11b0e89. The site is very different before that commit and should not be used to create the site.
+
+## Architecture
+
+### No build system — pure static files
+There is no npm, bundler, or server. Open any `.html` file directly in a browser or serve the directory with any static file server.
+
+### Header/Footer injection via `includes.js`
+`header.html` and `footer.html` are separate partial files. Every page (except `index.html`) loads them at runtime via `fetch()` calls in `includes.js`. Each such page must have:
+```html
+<div id="header-placeholder"></div>
+<!-- page content -->
+<div id="footer-placeholder"></div>
+<script src="includes.js"></script>
+```
+`index.html` is the only page that deliberately omits the header/footer.
+
+### CSS conventions (`styles.css`)
+All CSS lives in `styles.css`. Key design tokens:
+- Background: `#fdf6e3` (warm parchment)
+- Primary dark: `#1a3a2a` (forest green — used for header, footer, borders)
+- Accent: `#e67e22` (orange — used for header/footer border)
+- Font: `Comic Neue` (Google Fonts import at top of `styles.css`)
+
+Important utility classes: `.main-content` (centered max-width container), `.page-title`, `.page-intro`, `.subtitle-text`, `.marginalia-inline`, `.marginalia-corner`, `.title-with-marginalia`.
+
+### Image asset conventions
+- `img/primary_logo.png` — main logo, used in header and on `index2.html`
+- `img/marginalia/` — decorative whimsical images; use sparingly with `.marginalia-inline` or `.marginalia-corner` CSS classes; can be rotated/scaled
+- `img/facilities/` — facility photos; only used in `about_ice_in_vt.html`
