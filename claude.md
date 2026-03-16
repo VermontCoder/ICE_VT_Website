@@ -34,23 +34,7 @@ This project is a static website designed to inform the public about ICE Tours V
         - The picture of the facility
         - Some bullet points below the facility with lorem ipsum text.
 
-    Finally, there should be a box at the end with the following div:
-    ```HTML
-     <div class="why-matters">
-        <h2>Why This Matters</h2>
-                <p>
-                    These aren't your typical government office buildings. These facilities represent
-                    significant infrastructure for federal surveillance and immigration enforcement
-                    that affects communities nationwide &mdash; all operating quietly in Vermont.
-                </p>
-                <p>
-                    Our tours help shine a light on these operations so that Vermonters can see for
-                    themselves what's happening in their community. Whether you're curious, concerned,
-                    or just want to see something unusual, ICE Tours VT offers a unique opportunity
-                    to witness this infrastructure firsthand.
-                </p>
-            </div>
-    ```
+    -   `what_you_can_do.html`: "What You Can Do" page with three action panels. Each panel has an `h2` action header, descriptive text, and relevant links or contact info. Uses `.action-panel` CSS class.
     -   `schedule.html`: This page should be a three column table with headers of "Date", "Time", and "Start Location". There should only be one row with "TBD" in all 3 cols.
     -   `contact.html`: This page should feature a contact page. However do not construct the contact form. Instead put this HTML for a contact page:
 

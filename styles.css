@@ -210,6 +210,72 @@ a:hover {
     margin-bottom: 6px;
 }
 
+.fact-sheet-link {
+    text-align: center;
+    margin: 10px auto 30px;
+    font-size: 1.1rem;
+}
+
+.fact-sheet-link a {
+    color: #1a3a2a;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.fact-sheet-link a:hover {
+    color: #e67e22;
+}
+
+/* What You Can Do - Action Panels */
+.action-panel {
+    background: #fff;
+    border: 3px solid #1a3a2a;
+    border-radius: 12px;
+    padding: 20px 28px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    box-shadow: 4px 4px 0 #c0c0a0;
+}
+
+.action-panel h2 {
+    font-size: 1.5rem;
+    color: #1a3a2a;
+    margin-bottom: 10px;
+}
+
+.action-panel h3 {
+    font-size: 1.1rem;
+    margin: 14px 0 8px;
+    color: #1a3a2a;
+}
+
+.action-panel ul {
+    padding-left: 25px;
+}
+
+.action-panel ul li {
+    margin-bottom: 6px;
+}
+
+.action-panel a {
+    color: #1155cc;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.action-panel a:hover {
+    color: #e67e22;
+}
+
+.action-tip {
+    background: #fef9e7;
+    border-left: 4px solid #e67e22;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
 .explain-text {
     background: #e8f5e9;
     border-radius: 12px;
