@@ -88,6 +88,6 @@ YouTube embed URL: `https://www.youtube.com/embed/gTMsB1U_kYM?si=OfzcLf0jxC6u3zJ
 
 ---
 
-## Known Note
+## Navigation Links
 
-`header.html` currently points its logo link and "Home" nav link to `index.html`. Per `CLAUDE.md`, the header logo should link to `index2.html`. Updating those links is **out of scope** for this task — user explicitly requested only creating `index2.html`.
+No navigation links are modified anywhere. `index2.html` uses the shared `header.html` via `includes.js` exactly as every other page does — the logo and "Home" link in the header both continue to point to `index.html`.
