@@ -168,7 +168,7 @@ a:hover {
     display: flex;
     align-items: stretch;
     gap: 30px;
-    min-height: 280px;
+    height: 320px;
     margin-bottom: 30px;
 }
 
@@ -184,7 +184,7 @@ a:hover {
 .hero-video {
     flex: 0 0 auto;
     aspect-ratio: 16 / 9;
-    align-self: stretch;
+    height: 100%;
 }
 
 .hero-video iframe {
@@ -511,7 +511,7 @@ a:hover {
 
     .hero-row {
         flex-direction: column;
-        min-height: unset;
+        height: auto;
         gap: 20px;
     }
 
