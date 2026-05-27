@@ -13,7 +13,10 @@
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page",
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot",
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__evaluate_script",
-      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages"
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages",
+      "Bash(mv:*)",
+      "Bash(git -C \"c:\\\\Users\\\\dfelc\\\\Documents\\\\ICEVT\\\\icevt_website\" status)",
+      "Bash(git -C \"c:\\\\Users\\\\dfelc\\\\Documents\\\\ICEVT\\\\icevt_website\" diff)"
     ]
   }
 }
