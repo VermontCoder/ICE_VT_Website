@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Bangers&display=swap');
 
 * {
     margin: 0;
@@ -161,6 +161,57 @@ a:hover {
     font-family: 'Comic Neue', cursive, sans-serif;
     font-size: 1.5rem;
     color: #1a3a2a;
+}
+
+/* Newsflash callout */
+.newsflash-callout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 750px;
+    margin: 10px auto 30px;
+    flex-wrap: wrap;
+}
+
+.newsflash-burst {
+    flex: 0 0 auto;
+    width: 105px;
+    height: 105px;
+    background: linear-gradient(135deg, #ff5a4e, #d62828 55%, #8b0000);
+    clip-path: polygon(50.0% 0.0%, 56.3% 10.5%, 65.5% 2.4%, 68.2% 14.4%, 79.4% 9.5%, 78.3% 21.7%, 90.5% 20.6%, 85.6% 31.8%, 97.6% 34.5%, 89.5% 43.7%, 100.0% 50.0%, 89.5% 56.3%, 97.6% 65.5%, 85.6% 68.2%, 90.5% 79.4%, 78.3% 78.3%, 79.4% 90.5%, 68.2% 85.6%, 65.5% 97.6%, 56.3% 89.5%, 50.0% 100.0%, 43.7% 89.5%, 34.5% 97.6%, 31.8% 85.6%, 20.6% 90.5%, 21.7% 78.3%, 9.5% 79.4%, 14.4% 68.2%, 2.4% 65.5%, 10.5% 56.3%, 0.0% 50.0%, 10.5% 43.7%, 2.4% 34.5%, 14.4% 31.8%, 9.5% 20.6%, 21.7% 21.7%, 20.6% 9.5%, 31.8% 14.4%, 34.5% 2.4%, 43.7% 10.5%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-8deg);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.newsflash-burst span {
+    transform: rotate(8deg);
+    width: 82%;
+    font-family: 'Bangers', 'Comic Neue', cursive, sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #fff6e0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 0 #6b0f0f, -1px -1px 0 #6b0f0f, 1px -1px 0 #6b0f0f, -1px 1px 0 #6b0f0f;
+}
+
+.newsflash-link {
+    flex: 1 1 300px;
+    max-width: 420px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a3a2a;
+    text-decoration: underline;
+}
+
+.newsflash-link:hover {
+    color: #e67e22;
 }
 
 /* Homepage hero row */
