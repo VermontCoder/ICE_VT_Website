@@ -10,8 +10,8 @@ This project is a static website designed to inform the public about ICE Tours V
 
 *   **Frontend:** Static Website using only HTML, CSS and Javascript.
 *   **General Page Layout:** 
-    - All pages (except index.html) should have a header with a miniature version of the `img/primary_logo.png` and the words "ICE Tours VT" on it. There should be navigation links entitled "Home", "About ICE in VT", "Schedule" and "Contact" linking to the appropriate pages. 
-    - Clicking on the miniaturized logo should link to `index2.html`.
+    - All pages should have a header with a miniature version of the `img/primary_logo.png` and the words "ICE Tours VT" on it. There should be navigation links entitled "Home", "About ICE in VT", "Schedule" and "Contact" linking to the appropriate pages. 
+    - Clicking on the miniaturized logo should link to `index.html`.
     
 
 *   **Website Style:**
@@ -27,8 +27,7 @@ This project is a static website designed to inform the public about ICE Tours V
     - the images in `img/facilities` are only in the about_ice_in_vt.html page as described below. 
     
 *   **Pages:**
-    -   `index.html`: "Coming Soon" landing page. Has no header/navigation. Shows the logo, "Coming Soon" heading, and brief placeholder text.
-    -   `index2.html`: Full homepage. Prominently features the ICE Tours VT logo located at `img/primary_logo.png`. Contains a few sentences describing the website's purpose and ends with "Come join us on a tour!" Header logo links to this page.
+    -   `index.html`: Full homepage (live — the site is no longer in "Coming Soon" mode). Has the standard header/navigation and prominently features the ICE Tours VT logo located at `img/primary_logo.png`, an embedded intro video, and a few sentences describing the website's purpose. Includes a "Newsflash" callout (`.newsflash-callout`) linking out to press coverage. Header logo links to this page.
     -   `about_ice_in_vt.html`: This page should have some brief (a few sentences) header text. Then there should be a panel for each of the facilities in the `img/facilities` folder. Each panel should be as follows:
         - Address of the facility at the top
         - The picture of the facility
@@ -67,14 +66,13 @@ The tone of the website should be upbeat and cheerful but also not hide the fact
 There is no npm, bundler, or server. Open any `.html` file directly in a browser or serve the directory with any static file server.
 
 ### Header/Footer injection via `includes.js`
-`header.html` and `footer.html` are separate partial files. Every page (except `index.html`) loads them at runtime via `fetch()` calls in `includes.js`. Each such page must have:
+`header.html` and `footer.html` are separate partial files. Every page, including `index.html`, loads them at runtime via `fetch()` calls in `includes.js`. Each page must have:
 ```html
 <div id="header-placeholder"></div>
 <!-- page content -->
 <div id="footer-placeholder"></div>
 <script src="includes.js"></script>
 ```
-`index.html` is the only page that deliberately omits the header/footer.
 
 ### CSS conventions (`styles.css`)
 All CSS lives in `styles.css`. Key design tokens:
@@ -86,6 +84,6 @@ All CSS lives in `styles.css`. Key design tokens:
 Important utility classes: `.main-content` (centered max-width container), `.page-title`, `.page-intro`, `.subtitle-text`, `.marginalia-inline`, `.marginalia-corner`, `.title-with-marginalia`.
 
 ### Image asset conventions
-- `img/primary_logo.png` — main logo, used in header and on `index2.html`
+- `img/primary_logo.png` — main logo, used in header and on `index.html`
 - `img/marginalia/` — decorative whimsical images; use sparingly with `.marginalia-inline` or `.marginalia-corner` CSS classes; can be rotated/scaled
 - `img/facilities/` — facility photos; only used in `about_ice_in_vt.html`
